@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo service gunicorn $1
+echo "Operation Completed (gunicorn $1)..."
+sudo service nginx $1
+echo "Operation Completed (nginx $1)..."
+echo "Done!"
